@@ -2,7 +2,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   -- use {'rose-pine/neovim', config = "vim.cmd('colorscheme rose-pine')"}
-  use {'arcticicestudio/nord-vim', config = "vim.cmd('colorscheme nord')"}
+  --  use {'arcticicestudio/nord-vim', config = "vim.cmd('colorscheme nord')"}
+  use {'dracula/vim', config = "vim.cmd('colorscheme dracula')"}
+
   use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate", event = "BufWinEnter", config = "require('treesitter-config')"}
   use {'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}, event = "BufWinEnter", config = "require('lualine-config')"}
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons', event = "BufWinEnter", config = "require('bufferline-config')"}
